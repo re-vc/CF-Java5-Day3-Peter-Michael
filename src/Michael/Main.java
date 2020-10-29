@@ -272,6 +272,8 @@ public class Main {
 */
 
         //Day 4 A6
+
+        /*
         int[] arr = new int[10];
         Scanner input = new Scanner(System.in);
         for (int i = 0; i < 10; i++) {
@@ -282,11 +284,64 @@ public class Main {
             System.out.println(i);
         }
 
-/*
-        for (int i= arr[0]; i < arr.length; i++){
-                System.out.println(arr[i]);
+        */
+
+        //Day 4 A7
+        //Teile aus dem internet kopiert, funktioniert, aber versteh ich nicht ganz, noch einmal ansehen!!!
+        /*
+        int[] arr = new int[3];
+        Scanner input = new Scanner(System.in);
+        for (int i = 0; i < 3; i++) {
+            System.out.println("Enter a number: ");
+            arr[i] = input.nextInt();
         }
+        System.out.println(Arrays.toString(arr));
+
+        for(int i=0; i<arr.length/2; i++){
+            int temp = arr[i];
+            arr[i] = arr[arr.length -i -1];
+            arr[arr.length -i -1] = temp;
+        }
+        System.out.println(Arrays.toString(arr));
 */
+        //Funktioniert und ist viel leichter zu verstehen!!!
+        /*
+        int[] arr = new int[3];
+        Scanner input = new Scanner(System.in);
+        for (int i = 0; i < 3; i++) {
+            System.out.println("Enter a number: ");
+            arr[i] = input.nextInt();
+        }
+        for (int i = 0; i < arr.length; i++){
+            System.out.println(arr[i]);
+        }
+
+        System.out.println();
+
+        for(int i=arr.length-1;i>=0;i--) {
+        System.out.println(arr[i]);
+        }
+        */
+
+        //Day 4 A8
+        //unfinished
+        String[] ingredients = {"1 dl milk", "1 slice of bread", "100gr chicken breast", "200gr salad"};
+        int[] kcal = {62, 74, 165, 33};
+
+        System.out.println("BREAKFAST");
+        System.out.println("2 x " + ingredients[0]);
+        System.out.println("3 x " + ingredients[1]);
+        System.out.println();
+
+        System.out.println("LUNCH");
+        System.out.println("1 x " + ingredients[1]);
+        System.out.println("2 x " + ingredients[2]);
+        System.out.println("1 x " + ingredients[3]);
+        System.out.println();
+
+        System.out.println("DINNER");
+        System.out.println("2 x " + ingredients[0]);
+        System.out.println("3 x " + ingredients[1]);
 
 
 
